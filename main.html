@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IYIS EVPO-1</title>
+	 <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function changeLanguage() {
+            var language = document.getElementById("languageSelect").value;
+            if (language) {
+                window.location.href = language + ".html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to IYIS server EVPO-1</h1>
+        <div class="header-images">
+            <img src="eu.jpg" alt="Flaga Unii Europejskiej" class="header-img">
+			<img src="onz.jpg" alt="Flaga Unii Europejskiej" class="header-img">
+			<img src="iyis.png" alt="Logo IYIS" class="header-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="unauthorized.html">Main Site</a></li>
+                <li><a href="unauthorized.html">European Economic Area</a></li>
+                <li><a href="unauthorized.html">North America</a></li>
+                <li><a href="unauthorized.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Select language to proceed to case MXW:5785493G</h2>
+            <select id="languageSelect" onchange="changeLanguage()">
+                <option value="" disabled selected>Select language</option>
+                <option value="english">English</option>
+                <option value="spanish">Español</option>
+                <option value="russian">Русский</option>
+                <option value="german">Deutsch</option>
+                <option value="polish">Polski</option>
+            </select>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IYIS</p>
+    </footer>
+</body>
+</html>
